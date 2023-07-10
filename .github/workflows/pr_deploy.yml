@@ -22,6 +22,8 @@ jobs:
 
       - name: 🔨 Install Project dependencies
         run: |
+          node -v
+          npm -v
           npm install -g @angular/cli
           npm install --force
 
