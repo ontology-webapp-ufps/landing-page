@@ -38,7 +38,6 @@ jobs:
         npm run test
         npm run build
 
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+    - name: Deploy
+      if: success()
       run: aws s3 sync ./dist/landing ${{ secrets.AWS_BUCKET_NAME }}
-
