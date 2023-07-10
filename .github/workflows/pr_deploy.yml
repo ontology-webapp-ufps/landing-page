@@ -1,4 +1,4 @@
-name: CI Pull request for Develop Branch
+name: CI PULL REQUEST INTEGRATION BRANCH
 
 on:
   push:
@@ -22,8 +22,6 @@ jobs:
 
       - name: 🔨 Install Project dependencies
         run: |
-          node -v
-          npm -v
           npm install -g @angular/cli
           npm install --force
 
@@ -37,7 +35,7 @@ jobs:
         uses: repo-sync/pull-request@v2
         with:
           destination_branch: "master"
-          pr_title: "Pulling APR ${{ github.ref }} into develop"
+          pr_title: "Pulling APR ${{ github.ref }} into master"
           pr_body: "*An automated PR from ${{ github.ref }}*"
           pr_label: "auto-pr"
           pr_draft: false
