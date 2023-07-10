@@ -40,4 +40,4 @@ jobs:
 
     - name: Deploy
       if: success()
-      run: aws s3 sync ./dist/landing ${{ secrets.AWS_BUCKET_NAME }}
+      run: aws s3 sync ./dist/landing s3://ontology-webapp
