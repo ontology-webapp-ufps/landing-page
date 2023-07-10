@@ -14,6 +14,7 @@ export class RedirectGuard implements CanActivate {
     state: RouterStateSnapshot
   ): boolean {
     window.location.href = route.data['externalUrl'];
+    console.log(state);
     return true;
   }
 }
