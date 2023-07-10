@@ -1,18 +1,18 @@
 <testExecutions version="1">
   <file path="src/app/app.component.spec.ts">
     <testCase name="AppComponent should create the app" duration="28"/>
-    <testCase name="AppComponent should have as title 'landing'" duration="5"/>
-  </file>
-  <file path="src/app/components/footer/footer.component.spec.ts">
-    <testCase name="FooterComponent should create" duration="9"/>
-  </file>
-  <file path="src/app/components/our-team/our-team.component.spec.ts">
-    <testCase name="OurTeamComponent should create" duration="16"/>
+    <testCase name="AppComponent should have as title 'landing'" duration="6"/>
   </file>
   <file path="src/app/components/information/information.component.spec.ts">
-    <testCase name="InformationComponent should create" duration="7"/>
+    <testCase name="InformationComponent should create" duration="20"/>
+  </file>
+  <file path="src/app/components/our-team/our-team.component.spec.ts">
+    <testCase name="OurTeamComponent should create" duration="14"/>
+  </file>
+  <file path="src/app/components/footer/footer.component.spec.ts">
+    <testCase name="FooterComponent should create" duration="5"/>
   </file>
   <file path="src/app/components/header/header.component.spec.ts">
-    <testCase name="HeaderComponent should create" duration="5"/>
+    <testCase name="HeaderComponent should create" duration="6"/>
   </file>
 </testExecutions>

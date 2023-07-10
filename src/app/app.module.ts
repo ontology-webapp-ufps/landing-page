@@ -6,6 +6,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { OurTeamComponent } from './components/our-team/our-team.component';
 import { InformationComponent } from './components/information/information.component';
+import { RedirectGuard } from './core/services/route.service';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,12 @@ import { InformationComponent } from './components/information/information.compo
     InformationComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+    RedirectGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
