@@ -1,4 +1,4 @@
-name: CI Pull request for Develop Branch
+name: CI PULL REQUEST INTEGRATION BRANCH
 
 on:
   push:
