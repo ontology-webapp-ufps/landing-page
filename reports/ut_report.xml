@@ -1,18 +1,41 @@
 <testExecutions version="1">
-  <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should create the app" duration="28"/>
-    <testCase name="AppComponent should have as title 'landing'" duration="5"/>
-  </file>
   <file path="src/app/components/footer/footer.component.spec.ts">
-    <testCase name="FooterComponent should create" duration="9"/>
-  </file>
-  <file path="src/app/components/our-team/our-team.component.spec.ts">
-    <testCase name="OurTeamComponent should create" duration="16"/>
+    <testCase name="FooterComponent should create" duration="28"/>
   </file>
   <file path="src/app/components/information/information.component.spec.ts">
-    <testCase name="InformationComponent should create" duration="7"/>
+    <testCase name="InformationComponent should create" duration="38">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[Router -&gt; Router]: 
+  NullInjectorError: No provider for Router!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'Router', 'Router' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[Router -&gt; Router]: 
+  NullInjectorError: No provider for Router!
+    at NullInjector.get (node_modules/@angular/core/fesm2020/core.mjs:8990:27)
+    at R3Injector.get (node_modules/@angular/core/fesm2020/core.mjs:9157:33)
+    at R3Injector.get (node_modules/@angular/core/fesm2020/core.mjs:9157:33)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2020/core.mjs:21696:33)
+    at ChainedInjector.get (node_modules/@angular/core/fesm2020/core.mjs:21494:36)
+    at lookupTokenUsingModuleInjector (node_modules/@angular/core/fesm2020/core.mjs:3289:39)
+    at getOrCreateInjectable (node_modules/@angular/core/fesm2020/core.mjs:3334:12)
+    at ɵɵdirectiveInject (node_modules/@angular/core/fesm2020/core.mjs:10312:12)
+    at NodeInjectorFactory.factory (ng:///InformationComponent/ɵfac.js:4:48)
+    at getNodeInjectable (node_modules/@angular/core/fesm2020/core.mjs:3519:44)
+
+Error: Expected undefined to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.apply (src/app/components/information/information.component.spec.ts:21:23)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/components/our-team/our-team.component.spec.ts">
+    <testCase name="OurTeamComponent should create" duration="12"/>
+  </file>
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should create the app" duration="5"/>
+    <testCase name="AppComponent should have as title 'landing'" duration="4"/>
   </file>
   <file path="src/app/components/header/header.component.spec.ts">
-    <testCase name="HeaderComponent should create" duration="5"/>
+    <testCase name="HeaderComponent should create" duration="4"/>
   </file>
 </testExecutions>

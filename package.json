@@ -12,8 +12,7 @@
     "build:prod": "ng build --base-href='./' --configuration=production",
     "test:prod": "ng test --code-coverage",
     "test:qa": "ng test --code-coverage",
-    "build:qa": "ng build --base-href='./' --configuration=qa",
-    "baseLibrary": "npm i iptdevs-design-system"
+    "build:qa": "ng build --base-href='./' --configuration=qa"
   },
   "private": true,
   "dependencies": {
@@ -28,7 +27,6 @@
     "@angular/platform-browser-dynamic": "~14.0.0",
     "@angular/router": "~14.0.0",
     "bootstrap": "^5.2.3",
-    "iptdevs-design-system": "^3.1.4",
     "ng2-currency-mask": "^13.0.3",
     "node": "^14.15.1",
     "primeflex": "~3.2.1",
