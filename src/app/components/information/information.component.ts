@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProjectionSecionRs } from 'src/app/core/interface/project_section_rs.interface';
+import { ProjectionSectionRs } from 'src/app/core/interface/project_section_rs.interface';
 import { ParameterService } from 'src/app/core/services/parameters-service/parameter.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { ParameterService } from 'src/app/core/services/parameters-service/param
 })
 export class InformationComponent {
 
-  parameters: ProjectionSecionRs[] = [];
+  parameters: ProjectionSectionRs[] = [];
 
   constructor(private parameterService: ParameterService) {
     this.parameterService.getAboutProjectSection().subscribe((response) => {

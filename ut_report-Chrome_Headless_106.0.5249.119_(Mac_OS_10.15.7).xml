@@ -1,0 +1,24 @@
+<testExecutions version="1">
+  <file path="Chrome_Headless_106_0_5249_119_(Mac_OS_10_15_7).ParameterService">
+    <testCase name="ParameterService Debe de retonar la información de la página principal" duration="2"/>
+    <testCase name="ParameterService Debe de retonar la información de la página principal" duration="1"/>
+    <testCase name="ParameterService Debe crearse correctamente" duration="1"/>
+    <testCase name="ParameterService Debe de retonar la información de la página principal" duration="1"/>
+  </file>
+  <file path="Chrome_Headless_106_0_5249_119_(Mac_OS_10_15_7).HeaderComponent">
+    <testCase name="HeaderComponent should create" duration="36"/>
+  </file>
+  <file path="Chrome_Headless_106_0_5249_119_(Mac_OS_10_15_7).InformationComponent">
+    <testCase name="InformationComponent should create" duration="11"/>
+  </file>
+  <file path="Chrome_Headless_106_0_5249_119_(Mac_OS_10_15_7).OurTeamComponent">
+    <testCase name="OurTeamComponent should create" duration="9"/>
+  </file>
+  <file path="Chrome_Headless_106_0_5249_119_(Mac_OS_10_15_7).AppComponent">
+    <testCase name="AppComponent should have as title 'landing'" duration="4"/>
+    <testCase name="AppComponent should create the app" duration="3"/>
+  </file>
+  <file path="Chrome_Headless_106_0_5249_119_(Mac_OS_10_15_7).FooterComponent">
+    <testCase name="FooterComponent should create" duration="4"/>
+  </file>
+</testExecutions>

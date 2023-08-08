@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Team } from 'src/app/core/interface/team.interface';
 import { TeamSectionRs } from 'src/app/core/interface/team_section_rs.interface';
 import { ParameterService } from 'src/app/core/services/parameters-service/parameter.service';
 
