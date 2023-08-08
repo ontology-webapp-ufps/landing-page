@@ -6,6 +6,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { OurTeamComponent } from './components/our-team/our-team.component';
 import { InformationComponent } from './components/information/information.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,9 +20,12 @@ import { InformationComponent } from './components/information/information.compo
     InformationComponent
   ],
   imports: [
-    BrowserModule
+    BrowserAnimationsModule,
+    BrowserModule,
+    CommonModule,
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

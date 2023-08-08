@@ -1,12 +1,11 @@
-<div class="header_container">
+<div class="header_container" *ngIf="this.parameters.length > 0">
     <nav class="navbar">
-        <p class="navbar-brand">UFPS - GIA</p>
+        <p class="navbar-brand">{{this.parameters[0].main_title}}</p>
     </nav>
     <div class="header_container__information">
         <div class="header_container__information--text">
-            <h1>Buscador Ontologico</h1>
-            <p>Este sistema web ha sido creado como un sistema buscador ontologico, el cual tiene la capacidad de
-                realizar busquedas profundas</p>
+            <h1>{{this.parameters[0].content_title}}</h1>
+            <p>{{this.parameters[0].content}}</p>
         </div>
     </div>
 </div>
