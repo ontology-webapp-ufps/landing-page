@@ -4,20 +4,9 @@
     <br>
 
     <div class="cards-container">
-        <div class="card">
-            <h1>Motivación</h1>
-            <p>Este proyecto es desarollado como parte del proceso de sustentación de tesis para optar por el titulo de
-                ingeniería de Sistemas en la Universidad Francisco de Paula Santander</p>
-        </div>
-
-        <div class="card">
-            <h1>Principios</h1>
-            <p>Este proyecto aplica un estilo de arquitectura orientado a los microservicios, conectado a un servicio web desarrolado previamente</p>
-        </div>
-
-        <div class="card">
-            <h1>Tecnologías</h1>
-            <p>En el proyecto se emplean frameworks de desarrollo como es el caso de Angular, Flask y ... para la creación de los microservicios, los cuales son desplegados en la nube de AWS</p>
+        <div class="card" *ngFor="let item of parameters">
+            <h1>{{item.content_title}}</h1>
+            <p>{{item.content}}</p>
         </div>
     </div>
 

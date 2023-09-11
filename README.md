@@ -1,5 +1,8 @@
 # Landing
 
+Para ejecutar este proyecto de frontend se requiere levantar una isntancia del backend de parameter-service
+la cual debe ser ajsutada a nivel de URL en los enviroments del proyecto
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
 ## Development server

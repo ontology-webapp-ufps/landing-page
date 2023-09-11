@@ -10,9 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:prod": "ng build --base-href='./' --configuration=production",
-    "test:prod": "ng test --code-coverage",
-    "test:qa": "ng test --code-coverage",
-    "build:qa": "ng build --base-href='./' --configuration=qa"
+    "test:prod": "ng test --code-coverage"
   },
   "private": true,
   "dependencies": {

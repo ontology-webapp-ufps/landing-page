@@ -6,6 +6,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { OurTeamComponent } from './components/our-team/our-team.component';
 import { InformationComponent } from './components/information/information.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
 import { RedirectGuard } from './core/services/route.service';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -18,6 +22,11 @@ import { AppRoutingModule } from './app-routing.module';
     InformationComponent
   ],
   imports: [
+    BrowserAnimationsModule,
+    BrowserModule,
+    CommonModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
   ],
