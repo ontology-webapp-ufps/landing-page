@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RedirectGuard } from './core/services/route.service';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     HttpClientModule,
     ReactiveFormsModule,
+    BrowserModule,
+    AppRoutingModule,
+  ],
+  providers: [
+    RedirectGuard
   ],
   bootstrap: [AppComponent]
 })

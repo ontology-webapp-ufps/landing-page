@@ -1,5 +1,6 @@
 /* eslint-disable prefer-const */
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+<<<<<<< HEAD
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
@@ -7,10 +8,17 @@ import { ParameterService } from 'src/app/core/services/parameters-service/param
 import { of } from 'rxjs';
 import { InformationComponent } from './information.component';
 import { ProjectionSectionRs } from 'src/app/core/interface/project_section_rs.interface';
+=======
+import { Router } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
+import { InformationComponent } from './information.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+>>>>>>> master
 
 describe('InformationComponent', () => {
   let component: InformationComponent;
   let fixture: ComponentFixture<InformationComponent>;
+  let router: Router;
 
   const MOCK_PARAMETER: ProjectionSectionRs[] = [
     {
@@ -37,22 +45,32 @@ describe('InformationComponent', () => {
    
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+<<<<<<< HEAD
       declarations: [ InformationComponent ],
       imports: [ HttpClientTestingModule ],
       providers: [
         { provide: ParameterService, useValue: mockParameterService},
       ],
       schemas: [NO_ERRORS_SCHEMA]
+=======
+      imports: [
+        RouterTestingModule,
+      ],
+      declarations: [ InformationComponent ],
+      schemas : [ NO_ERRORS_SCHEMA ]
+>>>>>>> master
     })
     .compileComponents();
 
     fixture = TestBed.createComponent(InformationComponent);
-    component = fixture.componentInstance;
+    component = fixture.componentInstance;    
+    router = TestBed.get(Router);
     fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
+    console.log(router)
   });
 
 });
